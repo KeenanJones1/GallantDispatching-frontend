@@ -27,7 +27,6 @@ const Wrapper = styled.section`
  .hero-banner{
   text-align: center;
   color: white;
-  padding: 0 3rem;
  }
 
  .hero-banner h1{
