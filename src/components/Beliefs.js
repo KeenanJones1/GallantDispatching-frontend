@@ -19,7 +19,6 @@ const Wrapper = styled.section`
  }
 
  h1{
-  letter-spacing: ${spacing.$letter};
   font-size: 2.5rem;
   color: white;
  }
@@ -44,7 +43,6 @@ const Wrapper = styled.section`
   max-width: 47rem;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: ${spacing.$letter};
   font-size: 1.5rem;
   line-height: 1.5em;
  }

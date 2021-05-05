@@ -8,7 +8,6 @@ import Contact from '../components/Contact'
 
 const Wrapper = styled.div`
 
-
 `
 
 const Landing = () => {

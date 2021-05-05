@@ -21,7 +21,8 @@ const Wrapper = styled.section`
  }
 
  .testimonial{
-  border-left: 1px solid;
+  border-left: 2px solid;
+  padding-left: 20px;
  }
 
  h1{
@@ -30,9 +31,9 @@ const Wrapper = styled.section`
   color: white;
  }
 
- h4{
+ span{
  margin-bottom: 1.25rem;
- font-size: 2rem;
+ font-size: 1.8rem;
  color: white;
  }
 
@@ -40,8 +41,7 @@ const Wrapper = styled.section`
   max-width: 47rem;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: ${spacing.$letter};
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5em;
  }
 
@@ -59,10 +59,10 @@ const Wrapper = styled.section`
     width: 100vw; 
     height: 80vh;
     background: rgba(61, 90, 128, 0.7);
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     margin: 0;
-    align-items: center;
+    /* align-items: center; */
    }
 
    .testimonials{
@@ -77,10 +77,6 @@ const Wrapper = styled.section`
     margin-bottom: 0; 
     align-self: center;
     position: relative;
-    span{
-     position: relative;
-     left: 800px;
-    }
    }
   }
 `
@@ -90,6 +86,7 @@ const Testimonials = () => {
  return (
   <Wrapper>
    <div className="overlay">
+
      <div className="title">
       <p>Testimonials</p>
       <h1>What People Say</h1>

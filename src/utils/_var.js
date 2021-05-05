@@ -6,7 +6,7 @@ const colors = {
 }
 
 const spacing = {
- $letter: '0.25rem',
+ $letter: '0.15rem',
 }
 
 const fonts = {
