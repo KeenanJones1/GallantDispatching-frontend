@@ -1,8 +1,9 @@
 const colors = {
- $background: '#3E7E98',
- $black: '#253236',
- $brown: '#9B6A37',
+ $background: '#253236',
+ $primary: '#306a85',
+ $secondary: '#9B6A37',
  $footer: '#08154A',
+ $btn: '#B3061B',
 }
 
 const spacing = {

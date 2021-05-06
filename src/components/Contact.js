@@ -2,15 +2,19 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import img from '../gallant_images/map.jpg'
 import styled from 'styled-components'
-import {colors, spacing} from '../utils/_var'
+import {colors, spacing, fonts} from '../utils/_var'
+
+import {HeroBtn} from '../utils/Buttons'
 
 const Wrapper = styled.section`
  height: 80vh;
- background: ${colors.$colorBg};
+ background: ${colors.$background};
  display: flex;
  justify-content: center;
  margin: 0;
  align-items: center;
+ font-family: ${fonts.$mainFont};
+
 
  h1{
   font-size: 3rem;
@@ -26,6 +30,7 @@ const Wrapper = styled.section`
   color: white;
   padding: 0 3rem;
  }
+
  .hero-banner h1{
   text-transform: uppercase;
  }
@@ -43,13 +48,13 @@ const Wrapper = styled.section`
    background-size: cover;
    background-color:rgba(61, 90, 128, 0.7);
    .overlay{
-        width:100vw;
-        height: 80vh;
-        background: rgba(61, 90, 128, 0.6);
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        align-items: center;
+      width:100vw;
+      height: 80vh;
+      background: rgba(61, 90, 128, 0.6);
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      align-items: center;
     }
     .hero-banner{
      padding: 0; 
@@ -68,11 +73,11 @@ const Contact = () => {
      <h1>Hit the Road with Us</h1>
      <h2>Our professional dispatchers have the contacts to keep you loaded with the best loads at the highest rates.</h2>
 
-     <button>
+     <HeroBtn>
       <Link to='/contact'>
        Contact Us
       </Link>
-     </button>
+     </HeroBtn>
     </div>
    </div>
   </Wrapper>

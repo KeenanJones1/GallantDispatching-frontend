@@ -7,6 +7,8 @@ const Wrapper = styled.section`
  color: white;
  line-height: 1.5;
  font-family: ${fonts.$mainFont};
+ background: ${colors.$background};
+
 
  h2{
   margin: 0;
@@ -16,11 +18,22 @@ const Wrapper = styled.section`
   font-size: 1.5rem;
  }
 
+ .detail{
+   padding: 30px 0;
+   border-bottom: 2px solid white;
+ }
+
 
  p, h3{
   max-width: 20rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
+ }
+
+ p{
+   font-size: 1.5rem;
+   font-weight: bold;
  }
 
  .title{
@@ -28,15 +41,16 @@ const Wrapper = styled.section`
   margin-bottom: 4rem;
   text-transform: uppercase;
   font-size: 2.1rem;
+  border-top: 2px solid white;
+  padding-top: 4rem;
  }
 
  @media(min-width: 992px){
    background-image: url(${img});
    background-position: center;
    background-size: cover;
-   background-color:${colors.$background};
-  }
-  .overlay{
+   background-color:rgba(61, 90, 128, 0.8);
+   .overlay{
      width:100vw;
      background: rgba(61, 90, 128, 0.6);
      justify-content: center;
@@ -44,6 +58,19 @@ const Wrapper = styled.section`
      align-items: center;
      padding: 10px 0;
     }
+
+    .title{
+      border-top: none;
+    }
+
+    .detail{
+      padding:0;
+      border-left: 2px solid white;
+      border-bottom: 0;
+    }
+  }
+
+  
 
     @media(min-width: 576px){
      .section-center{

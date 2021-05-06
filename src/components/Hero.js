@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import img from '../gallant_images/road.jpg'
 import {spacing, colors, fonts} from '../utils/_var'
+import {HeroBtn} from '../utils/Buttons'
 
 const Wrapper = styled.section`
  min-height: 100vh;
@@ -73,7 +74,7 @@ const Hero = () => {
      <h4>A small business helping small businesses</h4>
      <h1>GALLANT DISPATCHING</h1>
      <h2>COMPETITIVE RATES | FREE BILLING & INVOICING | DEDICATED DISPATCHER</h2>
-     <button>Learn More</button>
+     <HeroBtn>Learn More</HeroBtn>
     </div>
    </div>
   </Wrapper>

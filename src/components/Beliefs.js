@@ -5,7 +5,7 @@ import {spacing, colors, fonts} from '../utils/_var'
 
 const Wrapper = styled.section`
  min-height: 80vh;
- background: ${colors.$background};
+ background: ${colors.$primary};
  display: flex;
  justify-content: center;
  margin: 0;

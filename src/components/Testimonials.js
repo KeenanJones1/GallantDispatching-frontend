@@ -5,8 +5,8 @@ import { fonts, colors, spacing, shadows } from "../utils/_var";
 
 
 const Wrapper = styled.section`
- min-height: 80vh;
- background: ${colors.$background};
+ min-height: 100vh;
+ background: ${colors.$primary};
  display: flex;
  justify-content: center;
  margin: 0;
@@ -23,11 +23,12 @@ const Wrapper = styled.section`
  .testimonial{
   border-left: 2px solid;
   padding-left: 20px;
+  margin: 90px 0;
  }
 
  h1{
   letter-spacing: ${spacing.$letter};
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   color: white;
  }
 
@@ -57,7 +58,7 @@ const Wrapper = styled.section`
    background-color: rgba(61, 90, 128, 0.6);
    .overlay{
     width: 100vw; 
-    height: 80vh;
+    height: 100vh;
     background: rgba(61, 90, 128, 0.7);
     /* display: flex;
     justify-content: center; */
