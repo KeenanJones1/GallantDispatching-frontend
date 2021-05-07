@@ -25,6 +25,7 @@ const Wrapper = styled.nav`
  .nav-icons{
   display: none;
  }
+
  .nav-center{
   width: 100%;
   max-width: 1170px;
@@ -53,22 +54,29 @@ const Wrapper = styled.nav`
   text-transform: capitalize;
   letter-spacing: ${spacing.$letter};
   transition: ${transitions.$primary};
-  color: ${colors.$colorBg};
+  color: black;
   cursor: pointer;
   font-size: 1.5rem;
+  a{
+   text-decoration: none;
+  }
  }
 
  .nav-link:hover{
-  color: ${colors.$colorBtn};
+  color: white;
   background: ${colors.$primary};
   padding-left: 2.25rem;
  }
  
  .nav-links{
-   height: ${props => props.toggle === false ? '0' : '440px' };
+   height: ${props => props.toggle === false ? '0' : '276px' };
    overflow: ${props => props.toggle === false ? 'hidden' : null};
    transition: ${transitions.$primary};
+   background: white;
+   padding: 0;
+   margin: 0;
  }
+ 
  @media(min-width: 992px){
    padding: 1rem 2rem;
    height: 12vh;
@@ -82,15 +90,18 @@ const Wrapper = styled.nav`
      display: flex;
      justify-content: space-between;
      align-items: center;
-     /* flex-wrap: wrap; */
+     flex-wrap: wrap;
    }
+
    .nav-links{
      height: auto;
      display: flex;
    }
+
    .nav-header{
      padding: 0 0;
    }
+
    .nav-link{
      padding: 0 0;
      margin-right: 0.7rem;
@@ -100,7 +111,7 @@ const Wrapper = styled.nav`
      }
    }
    .nav-link:hover{
-     padding: 0;
+     padding-left: 0.4rem;
      color: white;
      background: ${colors.$primary};
    }
@@ -112,7 +123,7 @@ const Wrapper = styled.nav`
      margin-right: 1rem;
      color: ${colors.$btn};
      transition: ${transitions.$primary};
-     font-size: 2rem;
+     font-size: 1.7rem;
    }
 
    .nav-icon:hover{
@@ -169,21 +180,21 @@ const Navbar = () => {
    <ul className="nav-icons">
       {/* single icon */}
        <li>
-        <a href="https://www.twitter.com" target="_blank" className="nav-icon">
+        <a href="https://twitter.com/GallantDispatch" target="_blank" className="nav-icon">
          <FontAwesomeIcon icon={faTwitter}/>
         </a>
        </li>
       {/* single icon end */}
       {/* single icon */}
        <li>
-        <a href="https://www.facebook.com" target="_blank" className="nav-icon">
+        <a href="https://www.facebook.com/keenan.jones.75491" target="_blank" className="nav-icon">
          <FontAwesomeIcon icon={faFacebook}/>
         </a>
        </li>
       {/* single icon end */}
       {/* single icon */}
        <li>
-        <a href="https://www.squarespace.com" target="_blank" className="nav-icon">
+        <a href="https://www.linkedin.com/in/keenan-jones-4b4273211/" target="_blank" className="nav-icon">
          <FontAwesomeIcon icon={faLinkedin}/>
         </a>
        </li>
