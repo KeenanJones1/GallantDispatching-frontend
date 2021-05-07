@@ -7,11 +7,17 @@ import {faRoad, faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons'
 
 const Wrapper = styled.div`
  box-sizing: border-box;
- background: ${colors.$btn};
+ background: ${colors.$background};
  color: #485e74;
  line-height: 1.6;
- font-family: ${fonts.$mainFont}, sans-serif;
+ font-family: ${fonts.$mainFont};
  padding: 1em;
+ margin-top: 5rem;
+
+ h3{
+   text-transform: uppercase;
+   font-size: 1.5rem;
+ }
 
  .container{
   max-width: 100vw;
@@ -40,6 +46,11 @@ const Wrapper = styled.div`
   box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
 }
 
+.icons{
+  margin-right: 0.5rem;
+}
+
+
 .wrapper > * {
   padding: 1em;
 }
@@ -65,8 +76,9 @@ const Wrapper = styled.div`
 .contact form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 3rem;
-  padding: 1.5rem;
+  row-gap: 1rem;
+  column-gap: 3rem;
+  padding-right: 2rem;
 }
 
 .contact form label {
@@ -112,6 +124,7 @@ const Wrapper = styled.div`
 }
 
 @media(min-width: 700px) {
+  height: 100vh;
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -150,15 +163,15 @@ const Contact = () => {
      <div className="company-info">
       <h3>Gallant Dispatching</h3>
       <ul>
-       <li><FontAwesomeIcon icon={faRoad}/>
+       <li><FontAwesomeIcon className="icons" icon={faRoad}/>
           1 East Erie St
           Suite 525-4857
           Chicago IL 60611
        </li>
-       <li><FontAwesomeIcon icon={faPhone}/>
+       <li><FontAwesomeIcon className="icons" icon={faPhone}/>
         (773)-236-1857
        </li>
-       <li><FontAwesomeIcon icon={faEnvelope} />
+       <li><FontAwesomeIcon className="icons" icon={faEnvelope} />
         gallantdispatching@gmail.com
        </li>
       </ul>

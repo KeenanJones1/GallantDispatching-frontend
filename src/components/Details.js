@@ -12,6 +12,7 @@ const Wrapper = styled.section`
 
  h2{
   margin: 0;
+  padding: 1rem;
  }
 
  h3{
@@ -19,30 +20,34 @@ const Wrapper = styled.section`
  }
 
  .detail{
-   padding: 30px 0;
+   padding: auto;
+   padding-bottom: 4rem;
+   max-width: 30rem;
    border-bottom: 2px solid white;
  }
 
 
  p, h3{
-  max-width: 20rem;
+  max-width: 17rem;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 2rem;
   margin-bottom: 0;
  }
 
  p{
-   font-size: 1.5rem;
+   font-size: 1.02rem;
    font-weight: bold;
  }
 
  .title{
   text-align: center;
-  margin-bottom: 4rem;
   text-transform: uppercase;
-  font-size: 2.1rem;
-  border-top: 2px solid white;
-  padding-top: 4rem;
+  font-size: 1.09rem;
+  /* padding-top: 4rem; */
+  max-width: 18rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
  }
 
  @media(min-width: 992px){
@@ -61,6 +66,13 @@ const Wrapper = styled.section`
 
     .title{
       border-top: none;
+      font-size: 1.7rem;
+      max-width: 50vw;
+    }
+
+    p{
+      font-size: 1.35rem;
+      max-width: 25vw;
     }
 
     .detail{

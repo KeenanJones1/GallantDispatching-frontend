@@ -19,13 +19,13 @@ const Wrapper = styled.section`
  }
 
  h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: white;
  }
 
  h4{
  margin-bottom: 1.25rem;
- font-size: 2rem;
+ font-size: 1.5rem;
  color: white;
  }
 
@@ -45,6 +45,7 @@ const Wrapper = styled.section`
   margin-right: auto;
   font-size: 1.5rem;
   line-height: 1.5em;
+  font-weight: bolder;
  }
 
   .title, .details{
@@ -60,7 +61,7 @@ const Wrapper = styled.section`
   .overlay{
      width:100vw;
      height: 80vh;
-     background: rgba(61, 90, 128, 0.6);
+     background: rgba(61, 90, 128, 0.8);
      display: flex;
      justify-content: center;
      margin: 0;

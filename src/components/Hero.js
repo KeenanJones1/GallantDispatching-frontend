@@ -12,16 +12,21 @@ const Wrapper = styled.section`
  margin: 0;
  align-items: center;
  font-family: ${fonts.$mainFont};
-
+  .btn{
+    margin-top: 5rem;
+  }
  h1{
   letter-spacing: ${spacing.$letter};
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
  }
 
+h2{
+  font-size: 0.9rem;
+}
  h4{
  margin-bottom: 1.25rem;
- font-size: 2rem;
+ font-size: 1.5rem;
  color: white;
  }
 
@@ -63,6 +68,14 @@ const Wrapper = styled.section`
     .hero-baner p {
      max-width: 45rem;
     }
+
+    h2{
+      font-size: 1.8rem;
+    }
+
+    h1{
+      font-size: 4rem;
+    }
   }
 `
 
@@ -74,7 +87,7 @@ const Hero = () => {
      <h4>A small business helping small businesses</h4>
      <h1>GALLANT DISPATCHING</h1>
      <h2>COMPETITIVE RATES | FREE BILLING & INVOICING | DEDICATED DISPATCHER</h2>
-     <HeroBtn>Learn More</HeroBtn>
+     <HeroBtn className="btn">Learn More</HeroBtn>
     </div>
    </div>
   </Wrapper>
