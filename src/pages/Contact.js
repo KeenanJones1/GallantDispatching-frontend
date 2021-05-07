@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import axios from 'axios'
 import styled from 'styled-components'
 import {spacing, colors, fonts} from '../utils/_var'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -154,6 +155,31 @@ const Wrapper = styled.div`
 
 
 const Contact = () => {
+  const [serverState, setServerState] = useState({submitting: false, status: null});
+ 
+  const handleServerResp = (ok, msg, form) => {
+    setServerState({
+      submitting: false,
+      status: {ok, msg}
+    });
+    if(ok){
+      form.reset();
+    }
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const form = e.target 
+    setServerState({submitting: true})
+    axios({
+      method: 'post',
+      url: 'https://formspree.io/f/mayaqzkk',
+      data: new FormData(form)
+    })
+    .then( r => {handleServerResp(true, "Thanks!", form)})
+    .catch(r => {handleServerResp(false, r.respond.data.error, form)})
+  }
+
  return (
   <Wrapper>
    <div className="container">
@@ -180,7 +206,7 @@ const Contact = () => {
 
      <div className="contact">
       <h3>E-mail Us </h3>
-      <form action="" id='contact-form'>
+      <form action="" id='contact-form' onSubmit={(event) => handleSubmit(event)}>
        <p>
         <label htmlFor="">Name</label>
         <input type="text" name="name" id="name" required/>
